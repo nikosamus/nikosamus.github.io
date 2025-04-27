@@ -2,15 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nikosamus.github.io/posts/hacking-my-vacuum-cleaner-p2/</loc>
+    <lastmod>2025-04-26T19:38:08+00:00</lastmod>
+  </url><url>
     <loc>https://nikosamus.github.io/posts/</loc>
+    <lastmod>2025-04-26T19:38:08+00:00</lastmod>
+  </url><url>
+    <loc>https://nikosamus.github.io/posts/bring-back-to-life-my-quadcopter/</loc>
+    <lastmod>2025-04-23T19:38:08+00:00</lastmod>
+  </url><url>
+    <loc>https://nikosamus.github.io/posts/hacking-my-vacuum-cleaner-p1/</loc>
+    <lastmod>2025-04-20T19:38:08+00:00</lastmod>
+  </url><url>
+    <loc>https://nikosamus.github.io/posts/yocto-&#43;-ros2-in-stm32mp157/</loc>
     <lastmod>2025-04-20T19:38:08+00:00</lastmod>
   </url><url>
     <loc>https://nikosamus.github.io/</loc>
     <lastmod>2025-04-20T19:35:07+00:00</lastmod>
   </url><url>
-    <loc>https://nikosamus.github.io/pages/about/</loc>
+    <loc>https://nikosamus.github.io/about/</loc>
   </url><url>
     <loc>https://nikosamus.github.io/categories/</loc>
+  </url><url>
+    <loc>https://nikosamus.github.io/pages/notes_md/</loc>
   </url><url>
     <loc>https://nikosamus.github.io/pages/</loc>
   </url><url>

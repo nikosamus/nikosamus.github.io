@@ -8,13 +8,88 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 20 Apr 2025 19:35:07 +0000</lastBuildDate><atom:link href="https://nikosamus.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Hacking my vacuum cleaner - Part 2</title>
+      <link>https://nikosamus.github.io/posts/hacking-my-vacuum-cleaner-p2/</link>
+      <pubDate>Sat, 26 Apr 2025 19:38:08 +0000</pubDate>
+      
+      <guid>https://nikosamus.github.io/posts/hacking-my-vacuum-cleaner-p2/</guid>
+      
+      <description>&lt;h1 id=&#34;valetudo-installation&#34;&gt;Valetudo installation&lt;/h1&gt;
+&lt;p&gt;Placeholder to explain valetudo installation&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Bringing back to life my quadcopter</title>
+      <link>https://nikosamus.github.io/posts/bring-back-to-life-my-quadcopter/</link>
+      <pubDate>Wed, 23 Apr 2025 19:38:08 +0000</pubDate>
+      
+      <guid>https://nikosamus.github.io/posts/bring-back-to-life-my-quadcopter/</guid>
+      
+      <description>&lt;p&gt;Back in 2015, I started my enginnering degree&amp;rsquo;s final project: &lt;code&gt;&amp;quot;Quadrotor: Construction, Navigation, Identification and Control&amp;quot;&lt;/code&gt;. And for a year and a half, after work, I dedicated myself to it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nikosamus.github.io/img/drone_p1.png&#34; alt=&#34;Quadrotor&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Key aspects:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Based on ROS, yes ROS1 back in 2015&lt;/li&gt;
+&lt;li&gt;Navigation and Control implemented in a Radxa Rock Pro (Embedded Linux board) running Ubuntu&lt;/li&gt;
+&lt;li&gt;Real-time PWMs signal generation implemented in an Arduino nano with I2C connection to the Linux board&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I haven&amp;rsquo;t worked in the project for 7 years and I plan to resume it now.&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>Hacking my vacuum cleaner - Part 1</title>
+      <link>https://nikosamus.github.io/posts/hacking-my-vacuum-cleaner-p1/</link>
+      <pubDate>Sun, 20 Apr 2025 19:38:08 +0000</pubDate>
+      
+      <guid>https://nikosamus.github.io/posts/hacking-my-vacuum-cleaner-p1/</guid>
+      
+      <description>&lt;p&gt;And one day I thought maybe I could hack that robot vacuum cleaner I have in a corner. I googled how to hack a Xiaomi vacuum cleaner and found Dennis Giese&amp;rsquo;s website &lt;a href=&#34;https://dontvacuum.me/&#34;&gt;https://dontvacuum.me/&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;gathering-information&#34;&gt;Gathering information&lt;/h2&gt;
+&lt;p&gt;My vacuum cleaner is the &amp;ldquo;Xiaomi - Robot 2 Pro +&amp;rdquo; and looking at the supported devices in &lt;a href=&#34;https://robotinfo.dev/&#34;&gt;https://robotinfo.dev/&lt;/a&gt; I found it but with a different model id.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://nikosamus.github.io/img/device_list_p2041.png&#34; alt=&#34;Device list pointing the p2041&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Mine is the &lt;code&gt;p2074&lt;/code&gt; and looks quite similar to the &lt;code&gt;p2041&lt;/code&gt;! Same name, same specs but different model&amp;hellip;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>yocto &#43; ROS2 in STM32MP157</title>
+      <link>https://nikosamus.github.io/posts/yocto-&#43;-ros2-in-stm32mp157/</link>
+      <pubDate>Sun, 20 Apr 2025 19:38:08 +0000</pubDate>
+      
+      <guid>https://nikosamus.github.io/posts/yocto-&#43;-ros2-in-stm32mp157/</guid>
+      
+      <description>&lt;p&gt;TODO&lt;/p&gt;
+&lt;h1 id=&#34;repos&#34;&gt;Repos&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nikosamus/repo-manifest-01&#34;&gt;https://github.com/nikosamus/repo-manifest-01&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nikosamus/meta-nikosamus/&#34;&gt;https://github.com/nikosamus/meta-nikosamus/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nikosamus/yocto-builder-devcontainer&#34;&gt;https://github.com/nikosamus/yocto-builder-devcontainer&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/nikosamus/generic-stm32mp1&#34;&gt;https://github.com/nikosamus/generic-stm32mp1&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</description>
+      
+    </item>
+    
+    <item>
       <title>About</title>
-      <link>https://nikosamus.github.io/pages/about/</link>
+      <link>https://nikosamus.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://nikosamus.github.io/pages/about/</guid>
+      <guid>https://nikosamus.github.io/about/</guid>
       
-      <description>&lt;p&gt;TODO &amp;#x1f61c;&lt;/p&gt;</description>
+      <description>&lt;p&gt;TODO: About content goes here &amp;#x1f61c;&lt;/p&gt;</description>
+      
+    </item>
+    
+    <item>
+      <title>notes.md</title>
+      <link>https://nikosamus.github.io/pages/notes_md/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nikosamus.github.io/pages/notes_md/</guid>
+      
+      <description></description>
       
     </item>
     

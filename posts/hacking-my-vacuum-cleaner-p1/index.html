@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en-us"><head><meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title itemprop="name">Hacking my vacuum cleaner - Part 1 | nikosamus</title>
+<meta property="og:title" content="Hacking my vacuum cleaner - Part 1 | nikosamus" />
+<meta name="twitter:title" content="Hacking my vacuum cleaner - Part 1 | nikosamus" />
+<meta itemprop="name" content="Hacking my vacuum cleaner - Part 1 | nikosamus" />
+<meta name="application-name" content="Hacking my vacuum cleaner - Part 1 | nikosamus" />
+<meta property="og:site_name" content="" />
+
+<meta name="description" content="">
+<meta itemprop="description" content="" />
+<meta property="og:description" content="" />
+<meta name="twitter:description" content="" />
+
+<meta property="og:locale" content="en-us" />
+<meta name="language" content="en-us" />
+
+  <link rel="alternate" hreflang="en-be" href="https://nikosamus.github.io/posts/hacking-my-vacuum-cleaner-p1/" title="" />
+
+
+
+
+
+    
+    
+    
+
+    <meta property="og:type" content="article" />
+    <meta property="og:article:published_time" content=2025-04-20T19:38:08Z />
+    <meta property="article:published_time" content=2025-04-20T19:38:08Z />
+    <meta property="og:url" content="https://nikosamus.github.io/posts/hacking-my-vacuum-cleaner-p1/" />
+
+    
+    <meta property="og:article:author" content="Nicolas Samus" />
+    <meta property="article:author" content="Nicolas Samus" />
+    <meta name="author" content="Nicolas Samus" />
+    
+    
+
+    
+
+    <script defer type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "Article",
+        "headline": "Hacking my vacuum cleaner - Part 1",
+        "author": {
+        "@type": "Person",
+        "name": ""
+        },
+        "datePublished": "2025-04-20",
+        "description": "",
+        "wordCount":  863 ,
+        "mainEntityOfPage": "True",
+        "dateModified": "2025-04-20",
+        "image": {
+        "@type": "imageObject",
+        "url": ""
+        },
+        "publisher": {
+        "@type": "Organization",
+        "name": "nikosamus"
+        }
+    }
+    </script>
+
+
+<meta name="generator" content="Hugo 0.146.6">
+
+    
+    <meta property="og:url" content="https://nikosamus.github.io/posts/hacking-my-vacuum-cleaner-p1/">
+  <meta property="og:site_name" content="nikosamus">
+  <meta property="og:title" content="Hacking my vacuum cleaner - Part 1">
+  <meta property="og:description" content="And one day I thought maybe I could hack that robot vacuum cleaner I have in a corner. I googled how to hack a Xiaomi vacuum cleaner and found Dennis Giese’s website https://dontvacuum.me/
+Gathering information My vacuum cleaner is the “Xiaomi - Robot 2 Pro &#43;” and looking at the supported devices in https://robotinfo.dev/ I found it but with a different model id.
+Mine is the p2074 and looks quite similar to the p2041! Same name, same specs but different model…">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-04-20T19:38:08+00:00">
+    <meta property="article:modified_time" content="2025-04-20T19:38:08+00:00">
+
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Hacking my vacuum cleaner - Part 1">
+  <meta name="twitter:description" content="And one day I thought maybe I could hack that robot vacuum cleaner I have in a corner. I googled how to hack a Xiaomi vacuum cleaner and found Dennis Giese’s website https://dontvacuum.me/
+Gathering information My vacuum cleaner is the “Xiaomi - Robot 2 Pro &#43;” and looking at the supported devices in https://robotinfo.dev/ I found it but with a different model id.
+Mine is the p2074 and looks quite similar to the p2041! Same name, same specs but different model…">
+
+
+    
+
+    <link rel="canonical" href="https://nikosamus.github.io/posts/hacking-my-vacuum-cleaner-p1/">
+    <link href="/style.min.7a3573ab1cc2b726eb2205a87b0f064510b69ea4b07a5a70f71321f74bba2d2d.css" rel="stylesheet">
+    <link href="/code-highlight.min.706d31975fec544a864cb7f0d847a73ea55ca1df91bf495fd12a177138d807cf.css" rel="stylesheet">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+
+
+
+<link rel="manifest" href="https://nikosamus.github.io/site.webmanifest">
+
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="msapplication-TileColor" content="#2d89ef">
+<meta name="theme-color" content="#434648">
+
+    
+    <link rel="icon" type="image/svg+xml" href="/icons/favicon.svg">
+
+    
+    
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-HH5ZGKE2ZK"></script>
+      <script>
+        var doNotTrack = false;
+        if ( false ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HH5ZGKE2ZK');
+        }
+      </script>
+    
+</head>
+<body data-theme = "" class="notransition">
+
+<script src="/js/theme.min.8961c317c5b88b953fe27525839672c9343f1058ab044696ca225656c8ba2ab0.js" integrity="sha256-iWHDF8W4i5U/4nUlg5ZyyTQ/EFirBEaWyiJWVsi6KrA="></script>
+
+<div class="navbar" role="navigation">
+    <nav class="menu" aria-label="Main Navigation">
+        <a href="https://nikosamus.github.io/" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" 
+viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" 
+stroke-linejoin="round" class="feather feather-home">
+<title></title>
+<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+<polyline points="9 22 9 12 15 12 15 22"></polyline>
+</svg>
+        </a>
+        <input type="checkbox" id="menu-trigger" class="menu-trigger" />
+        <label for="menu-trigger">
+            <span class="menu-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" stroke="currentColor" fill="none" viewBox="0 0 14 14"><title>Menu</title><path stroke-linecap="round" stroke-linejoin="round" d="M10.595 7L3.40726 7"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 3.51488L3.49301 3.51488"></path><path stroke-linecap="round" stroke-linejoin="round" d="M10.5096 10.4851H3.49301"></path><path stroke-linecap="round" stroke-linejoin="round" d="M0.5 12.5V1.5C0.5 0.947715 0.947715 0.5 1.5 0.5H12.5C13.0523 0.5 13.5 0.947715 13.5 1.5V12.5C13.5 13.0523 13.0523 13.5 12.5 13.5H1.5C0.947715 13.5 0.5 13.0523 0.5 12.5Z"></path></svg>
+            </span>
+        </label>
+
+        <div class="trigger">
+            <ul class="trigger-container">
+                
+                
+                <li>
+                    <a class="menu-link " href="/">
+                        Home
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link active" href="/posts/">
+                        Posts
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/pages/notes_md/">
+                        notes.md
+                    </a>
+                    
+                </li>
+                
+                <li>
+                    <a class="menu-link " href="/about/">
+                        About
+                    </a>
+                    
+                </li>
+                
+                <li class="menu-separator">
+                    <span>|</span>
+                </li>
+                
+                
+            </ul>
+            <a id="mode" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-sunny" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>LIGHT</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="mode-moon" width="21" height="21" viewBox="0 0 14 14" stroke-width="1">
+<title>DARK</title><g><circle cx="7" cy="7" r="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></circle><line x1="7" y1="0.5" x2="7" y2="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="2.4" x2="3.82" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="0.5" y1="7" x2="2.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="2.4" y1="11.6" x2="3.82" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="7" y1="13.5" x2="7" y2="11.5" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="11.6" x2="10.18" y2="10.18" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="13.5" y1="7" x2="11.5" y2="7" fill="none" stroke-linecap="round" stroke-linejoin="round"></line><line x1="11.6" y1="2.4" x2="10.18" y2="3.82" fill="none" stroke-linecap="round" stroke-linejoin="round"></line></g></svg>
+            </a>
+        </div>
+    </nav>
+</div>
+
+<div class="wrapper post">
+    <main class="page-content" aria-label="Content">
+        <article>
+            <header class="header">
+                <h1 class="header-title">Hacking my vacuum cleaner - Part 1</h1>
+                
+                
+                
+                <div class="post-meta">
+                    <time datetime="2025-04-20T19:38:08&#43;00:00" itemprop="datePublished"> 20 Apr 2025 </time>
+                </div>
+                
+            </header>
+            
+            <div class="page-content">
+                <p>And one day I thought maybe I could hack that robot vacuum cleaner I have in a corner. I googled how to hack a Xiaomi vacuum cleaner and found Dennis Giese&rsquo;s website <a href="https://dontvacuum.me/">https://dontvacuum.me/</a></p>
+<h2 id="gathering-information">Gathering information</h2>
+<p>My vacuum cleaner is the &ldquo;Xiaomi - Robot 2 Pro +&rdquo; and looking at the supported devices in <a href="https://robotinfo.dev/">https://robotinfo.dev/</a> I found it but with a different model id.</p>
+<p><img src="/img/device_list_p2041.png" alt="Device list pointing the p2041"></p>
+<p>Mine is the <code>p2074</code> and looks quite similar to the <code>p2041</code>! Same name, same specs but different model&hellip;</p>
+<p>I checked the materials and decided to try the serial method to access the debug terminal of the vacuum cleaner despite the mismatch of the model, who knows&hellip; maybe it just works&hellip;</p>
+<h2 id="serial-debug-connection">Serial debug connection</h2>
+<p>I took my USB2Serial 3.3v adapter and connected it according to the pinout explained in: <a href="https://builder.dontvacuum.me/dreameadapter/dreame.pdf">https://builder.dontvacuum.me/dreameadapter/dreame.pdf</a> (page 17). Just GND, RX and TX are needed in this case.</p>
+<p><img src="/img/p2041_serial_connection.png" alt="serial connection to the p2041 vacuum cleaner"></p>
+<p>Open a serial connection through the USB2Serial adaptor:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> sudo picocom /dev/ttyUSB0 -b115200
+</span></span></code></pre></div><p>And turned the vacuum cleaner on and&hellip; It worked!!! I got the expected login shell explained in <a href="https://builder.dontvacuum.me/dreameadapter/dreame.pdf">https://builder.dontvacuum.me/dreameadapter/dreame.pdf</a> (page 25) therefore I followed the rest of steps explained in <a href="https://builder.dontvacuum.me/dreame/cmds-reset.txt">https://builder.dontvacuum.me/dreame/cmds-reset.txt</a>. Basically press the reset button shortly while booting.</p>
+<p>Unfortunately I don&rsquo;t have screnshots of this step as I was too anxious to see if it works what indeed happened&hellip;
+But it was something like:</p>
+<pre tabindex="0"><code>p2041_login:
+</code></pre><p>Surprise here! The prompt reports the supported model in the docs (the one I found similar to my <code>p2074</code>) but not the expected <code>p2074</code>.</p>
+<h2 id="generate-the-root-password">Generate the root password</h2>
+<p>I put my vacuum cleaner serial number (no need to change the model from <code>p2074</code> to <code>p2041</code>) in <a href="https://builder.dontvacuum.me/dreamepassword.php">https://builder.dontvacuum.me/dreamepassword.php</a>. The password generator just worked without the need of changing the model in the serial number or use the command method but I executed the command anyway just to verify if I get the same result and indeed, I got the same password.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">$</span> <span class="nb">echo</span> -n <span class="s2">&#34;P2074XXXXXXXXXXXXX&#34;</span> <span class="p">|</span> md5sum <span class="p">|</span> base64
+</span></span></code></pre></div><h2 id="root-access">Root access</h2>
+<p>The moment of truth arrived! Time to see if the password works and I can login into the vacuum cleaner.</p>
+<p>Yes!, again no screenshots, but I got something like:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">[root@p2041_release:~]#</span>
+</span></span></code></pre></div><p>Which is the root prompt after rooting it as explained below&hellip;</p>
+<h2 id="device-information">Device information</h2>
+<p>The <a href="https://builder.dontvacuum.me/dreame/cmds-reset.txt">https://builder.dontvacuum.me/dreame/cmds-reset.txt</a> explains how to get some important information of the device.
+The command <code>cat /etc/os-release showed</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">[root@p2041_release:~]#</span> cat /etc/os-release 
+</span></span><span class="line"><span class="cl"><span class="go">{
+</span></span></span><span class="line"><span class="cl"><span class="go">    &#34;release_date&#34;:&#34;2022-11-11 19:14:58&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="go">    &#34;product&#34;: &#34;p2041&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="go">    &#34;fw_mcu_ota_ver&#34;: &#34;0.8.1&#34;,
+</span></span></span><span class="line"><span class="cl"><span class="go">    &#34;fw_arm_ver&#34;: &#34;4.3.3_1111&#34;
+</span></span></span><span class="line"><span class="cl"><span class="go">}
+</span></span></span></code></pre></div><h2 id="on-disaster-backup">On disaster backup</h2>
+<p>Again, following the document I backed up the relevant factory configuration and calibration data.</p>
+<h2 id="wifi-connection">Wifi connection</h2>
+<p>In this step, things went tricky&hellip;
+I cound&rsquo;t run:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">[root@p2041_release:~]#</span> wifi_cli -c <span class="s2">&#34;SSID&#34;</span> <span class="s2">&#34;password&#34;</span>
+</span></span></code></pre></div><p>or</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">[root@p2041_release:~]#</span> wifi_connect <span class="s2">&#34;SSID&#34;</span> <span class="s2">&#34;password&#34;</span>
+</span></span></code></pre></div><p>So I started trying things, I found a script called &lsquo;<code>wifi_start.sh</code>&rsquo; and tried it:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">[root@p2041_release:~]#</span> wifi_start.sh SELECT_MASTER <span class="s2">&#34;SSID&#34;</span> <span class="s2">&#34;password&#34;</span>
+</span></span></code></pre></div><p>Still no success, but I found the <code>wpa_cli</code> installed and the <code>wpa_supplicant</code> process running.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">[root@p2041_release:~]#</span> ps <span class="p">|</span> grep wpa
+</span></span><span class="line"><span class="cl"><span class="go"> 1177 root      0:00 wpa_supplicant -Dnl80211 -B -s -iwlan0 -c/data/config/wifi/wpa_supplicant.conf
+</span></span></span></code></pre></div><p>Let&rsquo;s try this way!</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">[root@p2041_release:~]#</span> wpa_cli -i wlan0
+</span></span></code></pre></div><p>Summary of wpa_cli commands:</p>
+<ul>
+<li><code>&gt;</code>: command sent i.e: scan</li>
+<li><code>&lt;</code>: response got from <code>wpa_cli</code></li>
+</ul>
+<pre tabindex="0"><code>&gt; scan
+&lt; OK
+&lt; &lt;3&gt;CTRL-EVENT-SCAN-STARTED 
+&lt; &lt;3&gt;CTRL-EVENT-SCAN-RESULTS 
+&lt; &lt;3&gt;WPS-AP-AVAILABLE 
+&lt; &lt;3&gt;CTRL-EVENT-NETWORK-NOT-FOUND
+
+&gt; scan_results
+&lt; &gt; bssid / frequency / signal level / flags / ssid
+&lt;   {network info:  XXXX XXXX XXXX    XXXX    XXXX    XXXX}
+&lt;   {network info:  XXXX XXXX XXXX    XXXX    XXXX    XXXX}
+&lt;   {network info:  XXXX XXXX XXXX    XXXX    XXXX    XXXX}
+
+&gt; add_network
+&lt; {new network id i.e: 1}
+&gt; set_network {network id} ssid &#34;SSID&#34;
+&gt; set_network {network id} psk &#34;password&#34;
+enable_network {network id}
+save_config
+quit
+</code></pre><p>Good, up to this point we should be connected to our WiFi network, but we don&rsquo;t have an IP yet, let&rsquo;s request it to the DHCP server of our WiFi router.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">[root@p2041_release:~]#</span> udhpc.sh
+</span></span></code></pre></div><p>At this point I got an IPv4 in the wlan0 adapter:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">[root@p2041_release:~]#</span> ip a show dev wlan0
+</span></span></code></pre></div><h1 id="permanent-root">Permanent root</h1>
+<p>In order to keep a permanent root access, the easiest way would be to flash our device with a generated firmware by dustbuilder. But remember that my vacuum cleaner (the exact model) wasn&rsquo;t among the supported ones.</p>
+<p>Jump of fait and use <a href="https://builder.dontvacuum.me/_dreame_p2041.html">https://builder.dontvacuum.me/_dreame_p2041.html</a> to generate a firmware, flash it and see what happens? Of course! Since I started with this, I found references to the <code>p2041</code>model. Like in the very first prompt and in the <code>/etc/os_release</code> file. Feels like after all the <code>p2074</code> is a rebranded <code>p2041</code> and nothing more. Probably, due to diffrent markets Asia/Europe, Xiaomi brands their devices differently&hellip;</p>
+<p>I read in the presentations that there is a A|B partition schema, so maybe in the worse case I&rsquo;d still have a way to recover the device.</p>
+<p>I generated the firmware using dustbuilder but this time I got an error while setting the serial number (model not supported). I changed the model id part in the serial number field and continued.</p>
+<p>Few minutes later, I got an email with the link to download the generated firmware and I proceeded to download and flash it.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-console" data-lang="console"><span class="line"><span class="cl"><span class="gp">[root@p2041_release:~]#</span> <span class="nb">cd</span> /tmp
+</span></span><span class="line"><span class="cl"><span class="gp">[root@p2041_release:~]#</span> wget --no-check-certificate <span class="o">{</span>url-of-firmware.tar.gz<span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="gp">[root@p2041_release:~]#</span> tar -xzvf <span class="o">{</span>name-of-firmware.tar.gz<span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="gp">[root@p2041_release:~]#</span> ./install.sh
+</span></span></code></pre></div><p>The device restared and voilà! Not asking for root password anymore!!!</p>
+<p>The device was rooted successfully and it still reports it&rsquo;s original model id.</p>
+<p>Next post: <a href="/posts/hacking-my-vacuum-cleaner-p2">Hacking my vacuum cleaner - Part 2</a></p>
+
+            </div>
+        </article></main>
+</div>
+<footer class="footer">
+    <span class="footer_item"> </span>
+    &nbsp;
+
+    <div class="footer_social-icons">
+<a href="https://github.com/nikosamus" target="_blank" rel="noopener noreferrer me"
+    title="Github">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+    </path>
+</svg>
+</a>
+<a href="https://www.linkedin.com/in/nikosamus/" target="_blank" rel="noopener noreferrer me"
+    title="Linkedin">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+    <rect x="2" y="9" width="4" height="12"></rect>
+    <circle cx="4" cy="4" r="2"></circle>
+</svg>
+</a>
+<a href="/index.xml" target="_blank" rel="noopener noreferrer me"
+    title="Rss">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+    stroke-linecap="round" stroke-linejoin="round">
+    <path d="M4 11a9 9 0 0 1 9 9" />
+    <path d="M4 4a16 16 0 0 1 16 16" />
+    <circle cx="5" cy="19" r="1" />
+</svg>
+</a>
+</div>
+    <small class="footer_copyright">
+        © 2025 Nicolas Samus.
+        
+    </small>
+</footer>
+
+
+
+
+
+
+
+    
+    <script src="https://nikosamus.github.io/js/main.min.4ee188e1744c19816e95a540b2650ed9f033ea0371e74eac8e717355cfca8741.js" integrity="sha256-TuGI4XRMGYFulaVAsmUO2fAz6gNx506sjnFzVc/Kh0E="></script>
+
+    
+
+</body>
+</html>
